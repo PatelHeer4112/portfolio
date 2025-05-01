@@ -1,0 +1,118 @@
+.home-container {
+  width: 100vw;
+  background: linear-gradient(135deg, #90c0d2, #73aabd, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1.2s ease-in-out forwards;
+  opacity: 0;
+  height: 80vh;
+  margin: 0;
+  padding: 0;
+  border-radius: 2px;
+}
+
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .home-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+    /* 👇 This ensures it doesn't stretch full width */
+    max-width: 800px;
+    padding: 2rem;
+  }
+  
+  .home-left {
+    color: #000000;
+  }
+  
+  .home-left h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .home-left h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #000000;
+  }
+  
+  .home-left p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 25px;
+  }
+  
+  .btn-primary {
+    background-color: rgb(0, 0, 0)  ;
+    color: #90c0d2;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ffffff;
+  }
+  
+  .btn-outline {
+    background-color: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+  }
+  
+  .btn-outline:hover {
+    background-color: #ffffff;
+    color: #90c0d2;
+  }
+  .home-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    max-width: 1000px;
+    padding: 2rem;
+    width: 100%;
+    gap: 2rem;
+  }
+  
+  .home-left {
+    flex: 1;
+  }
+  
+  .home-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  

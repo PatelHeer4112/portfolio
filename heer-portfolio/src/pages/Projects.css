@@ -1,0 +1,69 @@
+.projects-container {
+  width: 100vw;
+  background: linear-gradient(135deg, #90c0d2, #73aabd, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1.2s ease-in-out forwards;
+  opacity: 0;
+  padding: 4rem 2rem;
+  height: auto;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.projects-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  max-width: 1200px;
+  width: 100%;
+  gap: 0.1rem; /* Reduced gap */
+  flex-wrap: wrap;
+}
+
+.projects-box h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: rem;
+  color: #000;
+  width: 100%;
+}
+
+.project-card {
+  background: #ffffffcc;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 33%; /* Slightly reduced to fit all three in one row */
+  box-sizing: border-box;
+  color: #000;
+  min-width: 280px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project-card p {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}

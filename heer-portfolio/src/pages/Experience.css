@@ -1,0 +1,51 @@
+.experience-container {
+    width: 100vw;
+    background: linear-gradient(135deg, #90c0d2, #73aabd, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1.2s ease-in-out forwards;
+    opacity: 0;
+    height: 80vh;
+    padding: 0;
+    margin: 0;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .experience-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    padding: 2rem;
+    background-color: #ffffffcc;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .experience-left {
+    text-align: left;
+    color: #000;
+  }
+  
+  .experience-left h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .experience-left h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .experience-left p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+  }
+  
